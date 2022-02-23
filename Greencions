@@ -1,1 +1,16 @@
 BitGreen is a sustainable cryptocurrency modeled after Satoshi Nakamoto’s vision for Bitcoin.
+WINDOWS_PACKAGING = $( top_srcdir ) /share/pixmaps/bitcoin.ico \
+  $( top_srcdir ) /share/pixmaps/nsis-header.bmp \
+  $( top_srcdir ) /share/pixmaps/nsis-wizard.bmp \
+  $( top_srcdir ) /doc/README_windows.txt
+
+OSX_PACKAGING = $( OSX_DEPLOY_SCRIPT )  $( OSX_FANCY_PLIST )  $( OSX_INSTALLER_ICONS )  \
+  $( top_srcdir ) /contrib/macdeploy/ $( OSX_BACKGROUND_SVG )  \
+  $( OSX_DSSTORE_GEN )  \
+  $( top_srcdir ) /contrib/macdeploy/detached-sig-apply.sh \
+  $( top_srcdir ) /contrib/macdeploy/detached-sig-create.sh
+
+COVERAGE_INFO =baseline_filtered_combined.infobaseline.info block_test.info \
+  leveldb_baseline.info test_tixoncash_filtered.info total_coverage.info \
+  base_filtered.info block_test_filtered.info \
+  leveldb_baseline_filtered.info test_tixoncash_coverage.info test_tixoncash.info

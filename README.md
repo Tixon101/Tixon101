@@ -1,1 +1,1 @@
-The global payment revolution is coming, a blockchain payment feast is about to set sail, What are you waiting for?
+Under increasing sanctions from Western countries, Russia is considering accepting bitcoin and gold as payment methods for its oil and gas exports
